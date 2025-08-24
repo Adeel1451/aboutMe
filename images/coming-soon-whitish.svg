@@ -1,0 +1,12 @@
+<svg width="1212" height="940" viewBox="0 0 1212 940" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fb"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect x="80" y="80" rx="32" ry="32" width="1052" height="780" fill="rgba(255,255,255,0.82)" stroke="rgba(0,0,0,0.05)" stroke-width="2"/>
+  <text x="50%" y="440.0" text-anchor="middle" font-family="Segoe UI, DejaVu Sans, Arial" font-size="96" font-weight="700" fill="#2d2d2d">COMING SOON</text>
+  <text x="50%" y="520.0" text-anchor="middle" font-family="Segoe UI, DejaVu Sans, Arial" font-size="40" fill="#787878">Yet to be updated</text>
+</svg>

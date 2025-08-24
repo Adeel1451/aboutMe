@@ -1,0 +1,55 @@
+@import "tailwindcss";
+:root {
+    --primary-color:#28E98C;
+    --secondary-color:#101010;
+    --tertiary-color:#C2C2C2;
+    --color-body-text:#FFFFFF;
+    --color-border:#303030;
+}
+.container-border {
+    border: 1px  solid var(--color-border);
+}
+.footer-border {
+    border-top: 1px  solid var(--color-border);
+}
+@keyframes shrink {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+@keyframes pingFade {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.5); opacity: 0; } 
+}
+.status {
+  animation: shrink 0.3s ease-out; 
+  position: relative; 
+}
+.status::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  animation: pingFade 1s ease-out infinite;
+}
+
+.words {
+  display: inline-block;
+  padding-right: 3px;
+  border-right: 5px solid var(--tertiary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-size: 30px;
+  font-weight: 500; */
+  color: var(--primary-color);
+  animation: blinkCursor 0.7s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
